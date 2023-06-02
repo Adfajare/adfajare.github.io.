@@ -1,0 +1,121 @@
+:root{
+    --bg:#000080;
+    --prmary:#000000;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* button bot */
+
+
+.button-list {
+  position: fixed;
+  background-color: antiquewhite;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  list-style: none;
+  padding: 10px;
+  border-radius:10px ;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-list li {
+  margin-right: 10px;
+}
+
+.button-list li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* end button */
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+.hero-content #get-started-button{
+  background-color:transparent;
+  border-radius: 15%;
+  margin: 20px;
+  padding: 11px;
+  
+}
+.hero-section {
+  background-image: url("bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-button{
+  margin: 30px;
+}
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.features-section {
+  background-image: url("bg3.jpg");
+  background-position: center;
+  background-size: 1800px;
+  padding: 50px;
+  height: 700px;
+  text-align: center;
+}
+
+
+  #footer {
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    align-items: center;
+  }
+
+  /* relatif  */
+  @media screen and (max-width: 480px) {
+    .button-list li a {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+  /* Media query untuk perangkat tablet dengan lebar layar maksimum 768px */
+  @media screen and (max-width: 768px) {
+    .button-list li a {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
+
+  /* Media query untuk perangkat laptop dengan lebar layar minimum 769px */
+  @media screen and (min-width: 769px) {
+    .button-list li a {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+ 
